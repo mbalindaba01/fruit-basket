@@ -21,19 +21,19 @@ describe('The fruitbasket function', () => {
         assert.deepEqual(await fruit.findFruit('Strawberry'), [{fruit_type: 'Strawberry', fruit_quantity: 1, fruit_price: '4.00'}])
     })
 
-    it('should add the orange fruit basket to the database ,', async () => {
+    it('should add the orange fruit basket to the database', async () => {
         await fruit.createBasket('Orange', 1, '5.00')
         assert.deepEqual(await fruit.findFruit('Orange'), [{fruit_type: 'Orange', fruit_quantity: 1, fruit_price: '5.00'}])
     })
 
-    it('should update the number of fruits in a given Pomegranate basket', async () => {
+    it('should update the number of fruits in a pomegranate basket', async () => {
         await fruit.createBasket('Pomegranate', 2, '3.00')
         await fruit.updateBasket('Pomegranate', 4)
         let selectedFruit = await fruit.findFruit('Pomegranate')
         assert.equal(selectedFruit[0].fruit_quantity, 6)
     })
 
-    it('should update the number of fruits in a Pear Basket', async () => {
+    it('should update the number of fruits in a pear Basket', async () => {
         fruit.createBasket('Pear', 3, '5.00')
         await fruit.updateBasket('Pear', 2)
         let selectedFruit = await fruit.findFruit('Pear')
