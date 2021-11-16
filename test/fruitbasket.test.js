@@ -13,7 +13,7 @@ describe('The fruitbasket function', () => {
     let fruit = fruitBasket(pool)
 
     beforeEach( async() => {
-        await pool.query("truncate Fruit_Basket")
+        await pool.query("delete from Fruit_Basket")
     })
 
     it('should add the strawberry fruit basket to the database', async () => {
