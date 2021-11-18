@@ -1,1 +1,1 @@
-[![Build Status](https://app.travis-ci.com/mbalindaba01/Reg-Number-Webapp.svg?branch=master)](https://app.travis-ci.com/mbalindaba01/Reg-Number-Webapp)
+[![Build Status](https://app.travis-ci.com/mbalindaba01/fruit-basket.svg?branch=master)](https://app.travis-ci.com/mbalindaba01/fruit-basket)
