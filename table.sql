@@ -1,7 +1,7 @@
 create table Fruit_Basket (
     basket_id serial not null primary key,
     fruit_type text not null,
-    fruit_quantity integer not null,
+    fruit_quantity int not null,
     fruit_price decimal(5,2)
 )
 
