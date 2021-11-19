@@ -1,5 +1,3 @@
-CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
-
 create table fruit_basket (
     basket_id serial not null primary key,
     fruit_type text not null,
